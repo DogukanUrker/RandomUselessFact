@@ -1,4 +1,4 @@
 # RandomUselessFact 🤯
- Get random useless facts
+Get random useless facts.
  
 ![image](/appImage.png)
