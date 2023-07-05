@@ -14,7 +14,7 @@ function App() {
       .catch((error) => console.log(error));
   }, []);
 
-  return <>{<h2>{fact}</h2>}</>;
+  return <>{<h1>{fact}</h1>}</>;
 }
 
 export default App;
