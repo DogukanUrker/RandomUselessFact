@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+function refreshPage() {
+  window.location.reload();
+}
+
 function App() {
-  function refreshPage() {
-    window.location.reload(false);
-  }
   const [fact, setFact] = useState(null);
   useEffect(() => {
     fetch("https://uselessfacts.jsph.pl/api/v2/facts/random", {
