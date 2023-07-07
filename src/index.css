@@ -21,3 +21,18 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+button {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  transition: 0.25s;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #4b4b4b;
+}
+
+button:hover {
+  background-color: #3b3b3b;
+}

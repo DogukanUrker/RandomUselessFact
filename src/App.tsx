@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  function refreshPage() {
+    window.location.reload(false);
+  }
   const [fact, setFact] = useState(null);
   useEffect(() => {
     fetch("https://uselessfacts.jsph.pl/api/v2/facts/random", {
@@ -14,7 +17,12 @@ function App() {
       .catch((error) => console.log(error));
   }, []);
 
-  return <>{<h1>{fact}</h1>}</>;
+  return (
+    <main>
+      <button onClick={refreshPage}>new fact</button>
+      {<h1>{fact}</h1>}
+    </main>
+  );
 }
 
 export default App;
